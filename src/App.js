@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import logo from "./logo.svg"
 import "./App.css"
+import { SearchBar } from "./components/SearchBar"
 
 class LambdaDemo extends Component {
   constructor(props) {
@@ -32,6 +33,11 @@ class LambdaDemo extends Component {
 }
 
 class App extends Component {
+  handleSearch = (query) => {
+    console.log('Search query:', query)
+    // search logic here
+  }
+
   render() {
     return (
       <div className="App">
@@ -40,6 +46,7 @@ class App extends Component {
           <p>
             Edit <code>src/App.js</code> and save to reload.
           </p>
+          <SearchBar onSearch={this.handleSearch} className="w-64" />
           <LambdaDemo />
         </header>
       </div>
