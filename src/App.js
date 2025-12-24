@@ -23,8 +23,8 @@ class LambdaDemo extends Component {
 
     return (
       <p>
-        <button onClick={this.handleClick("hello")}>{loading ? "Loading..." : "Call Lambda"}</button>
-        <button onClick={this.handleClick("async-dadjoke")}>{loading ? "Loading..." : "Call Async Lambda"}</button>
+        <button onClick={this.handleClick("hello")}>{loading ? "Loading..." : "Goodluck"}</button>
+        <button onClick={this.handleClick("async-dadjoke")}>{loading ? "Loading..." : " You gyatt this"}</button>
         <br />
         <span>{msg}</span>
       </p>
@@ -44,7 +44,7 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
-            Edit <code>src/App.js</code> and save to reload.
+            Hi Team Awesome Genuises!
           </p>
           <SearchBar onSearch={this.handleSearch} className="w-64" />
           <LambdaDemo />
