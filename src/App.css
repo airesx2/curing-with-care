@@ -18,6 +18,15 @@
   color: white;
 }
 
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #000; /* Match your card's dark theme */
+}
+
 .App-link {
   color: #61dafb;
 }

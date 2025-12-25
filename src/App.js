@@ -1,7 +1,7 @@
 import React, { Component } from "react"
-import logo from "./logo.svg"
 import "./App.css"
 import { SearchBar } from "./components/SearchBar"
+import { LoginCard } from "./components/LoginCard"  // Changed this line
 
 class LambdaDemo extends Component {
   constructor(props) {
@@ -41,8 +41,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <LoginCard />  {/* Changed this line */}
+
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
           <p>
             Hi Team Awesome Genuises!
           </p>
